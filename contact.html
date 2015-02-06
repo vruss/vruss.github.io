@@ -1,0 +1,135 @@
+<!-- 
+Hemsidan är gjord i Notepad++ av Viktor Rosvall 2015-02-16 som både ett skolprojekt och som en bandhemsida.
+!-->
+<!DOCTYPE html>
+<html>
+	<head lang="se">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Jaernslag</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery.cookie.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		
+		$(".flagsv").click(function(){
+			$.cookie("sprak", "sv", {expires: 8});
+			location.reload();
+		});
+		
+		$(".flagen").click(function(){
+			$.cookie("sprak", "en", {expires: 8});
+			location.reload();
+		});
+		
+		if ($.cookie('sprak') == 'sv')
+		{
+			$("#contentsv").show();
+			$("#contenten").hide();
+		} 
+		else 
+		{
+			$("#contentsv").hide();
+			$("#contenten").show();
+		}
+		
+		$(".logo").on({
+		"mouseover" : function() 
+		{
+		this.src = 'logored.png';
+		},
+		"mouseout" : function() 
+		{
+		this.src='logo.png';
+		}
+		});
+		
+	});
+	</script>	
+	</head>
+	
+	<body>
+		<div id="background">
+			<div id="wrapper">	
+				<div id="menu">
+					<a href="home.html">
+						<img class="logo" src="logo.png"></img>
+					</a>													
+					<ul>
+						<li><a class="vald menulink" href="contact.html">Contact</a></li>
+						<li><a class="ovald menulink" href="media.html">Media</a></li>
+						<li><a class="ovald menulink" href="band.html">Band</a></li>
+						<li><a class="ovald menulink" href="home.html">Home</a></li>
+					</ul>
+				</div>
+				
+				
+				<div id="contenten"> 
+					<h3>Contact info</h3>
+					<p class="info">
+					Viktor Rosvall<br>
+					Phone: 46+ 072-051 88 16<br>
+					E-Mail: virosen@yahoo.se
+					</p>
+					
+					<p class="contact">					
+					We are a rock/punk cover band located in Ånge, Västernorrland, Sweden.<br>
+					We practice ~4 times a week in our rented local owned by Kulturbanken 2.0<br>
+					The local is a Bilda local which is free to play in if you're a member.<br>
+					And we are currently looking for a gig!
+					</p>
+					
+					
+				</div>	
+				
+				<div id="contentsv"> 
+					<h3>Kontakt Info</h3>
+					<p class="info">
+					Viktor Rosvall<br>
+					Telefån: 46+ 072-051 88 16<br>
+					E-Mail: virosen@yahoo.se
+					</p>
+					
+					<p class="contact">					
+					Vi är ett rock/punk cover band i Ånge, Västernorrland, Sverige.<br>
+					Vi över ~4 gånger i veckan i vår hyrda lokal i Kulturbanken 2.0<br>
+					Lokalen är en Bilda lokal som är gratis att spela i om man är medlem hos dom.<br>
+					Vi letar just nu efter ett gig! 
+					</p>
+					
+					<!--
+					<p>
+					Placeholder for a contact form*
+					</p>
+					!-->
+				</div>	
+			
+				<div id="footer">
+					<table>
+					<tr>
+						<td>
+							<a href="https://www.facebook.com/jaernslag">
+							<img class="facebook" src="facebook.png"></a>
+						</td>
+						
+						<td><a href="https://www.youtube.com/user/vr0sen">
+							<img class="youtube" src="youtube.png"></img></a></td>
+						
+						<td><a href="https://soundcloud.com/viktor-rosvall">
+							<img class="soundcloud" src="soundcloud.png"></img></a></td>
+						
+					</tr>
+					</table>					
+				</div>					
+			</div>
+			
+			<div id="end">
+				<div id="flags">			
+					<img class="flag flagsv" src="svflag1.jpg"></img>
+					<img class="flag flagen" src="enflag1.jpg"></img>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

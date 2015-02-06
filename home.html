@@ -1,0 +1,181 @@
+<!-- 
+Hemsidan är gjord i Notepad++ av Viktor Rosvall 2015-02-16 som både ett skolprojekt och som en bandhemsida.
+!-->
+<!DOCTYPE html>
+<html>
+	<head lang="se">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Jaernslag</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!--
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery.cookie.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		
+		$(".flagsv").click(function(){
+			$.cookie("sprak", "sv", {expires: 8});
+			location.reload();
+		});
+		
+		$(".flagen").click(function(){
+			$.cookie("sprak", "en", {expires: 8});
+			location.reload();
+		});
+		
+		if ($.cookie('sprak') == 'sv')
+		{
+			$("#newssv").show();
+			$("#newsen").hide();
+		} 
+		else 
+		{
+			$("#newssv").hide();
+			$("#newsen").show();
+		}
+		
+		$(".logo").on({
+		"mouseover" : function() 
+		{
+		this.src = 'logored.png';
+		},
+		"mouseout" : function() 
+		{
+		this.src='logo.png';
+		}
+		});
+		
+	});
+	</script>	
+	
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	<style type="text/css">a#vlb{display:none}</style>
+	
+<!-- End WOWSlider.com HEAD section -->
+
+</head>
+	
+	<body>
+		<div id="background">
+			<div id="wrapperhome">	
+				<div id="menu">
+					<a href="home.html">
+						<img class="logo" src="logo.png" ></img>
+					</a>
+					<ul>
+						<li><a class="ovald menulink" href="contact.html">Contact</a></li>
+						<li><a class="ovald menulink" href="media.html">Media</a></li>
+						<li><a class="ovald menulink" href="band.html">Band</a></li>
+						<li><a class="vald menulink" href="home.html">Home</a></li>
+					</ul>
+				</div>
+				
+				
+
+				
+
+				<div id="bandet">
+					
+					<!-- Start WOWSlider.com BODY section id=wowslider-container1 -->
+					<div id="wowslider-container1">
+					<div class="ws_images">
+						<a href="#"><img src="data1/images/gruppfoto_kallaren.jpg" alt="Svartvitt" title="Svartvitt" id="wows0"/></a>
+						<a href="#"><img src="data1/images/dsc_2321.jpg" alt="Källaren" title="Källaren" id="wows1"/></a>
+						<a href="#"><img src="data1/images/dsc_2320.jpg" alt="Dunno" title="Dunno" id="wows2"/></a>
+						<a href="#"><img src="data1/images/dsc_2332.jpg" alt="Bicepscurl" title="Bicepscurl" id="wows3"/></a>
+						</div>
+						<div class="ws_bullets"><div>
+						<a href="#wows0" title="Svartvitt"><img src="data1/tooltips/gruppfoto_kallaren.jpg" alt="Svartvitt"/>1</a>
+						<a href="#wows1" title="Källaren"><img src="data1/tooltips/dsc_2321.jpg" alt="Källaren"/>2</a>
+						<a href="#wows2" title="Dunno"><img src="data1/tooltips/dsc_2320.jpg" alt="Dunno"/>3</a>
+						<a href="#wows3" title="Bicepscurl"><img src="data1/tooltips/dsc_2332.jpg" alt="Bicepscurl"/>4</a>
+						</div></div>
+						<a style="display:none" href="http://wowslider.com">Vertical Image Slider by WOWSlider.com v1.7</a>
+					</div>
+					<script type="text/javascript" src="engine1/script.js"></script>
+				<!-- End WOWSlider.com BODY section -->
+					
+					<!--<img src="gruppfotoKallaren.jpg" width="1000px" height="630px">-->
+				</div>
+				
+				<div id="newsen"> 
+					<h3>News</h3>
+					<p class="info">
+					Kill! Kill! Pussycat! Opening Act! 
+					</p>
+					<p class="contact">					
+					Jaernslag will be the opening act for KKP on their release party! We will be playing 5-6 cover songs.<br>
+					Our drummer is away on vacation so we will have to train Robert, our substitute.<br>
+					Time and date: 21:30 - 22:00 2015-02-28 (30min)
+					</p>
+					
+					<p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+					
+					<p class="info">
+					Our shows!
+					</p>
+					<p class="contact">
+					Jaernslag will be playing on UKM (a Swedish music contest) with 2 songs.<br> 
+					Then we will play on a wedding in both acoustic and electric.<br>
+					And a few weeks after the wedding we will also play at our culture festival (Kulturnatten).<br>
+					UKM: 2015-03-22 (2 songs) | Kulturnatten: 2015-05-22 (30min)
+					</p>	
+				</div>
+
+				<div id="newssv"> 
+					<h3>Nyheter</h3>
+					<p class="info">
+					Kill! Kill! Pussycat! Förband! 
+					</p>
+					<p class="contact">					
+					Jaernslag kommer vara förband för KKP på deras release fest. Vi kommer spela 5-6 låtar.<br>
+					Vår trummis är på semester så vi får ta in Robert, våran reserv-trummis och träna honom.<br>
+					Tid och datum: 21:30 - 22:00 2015-02-28 (30min)
+					</p>
+					
+					<p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+					
+					<p class="info">
+					Våra spelningar!
+					</p>
+					<p class="contact">
+					Jaernslag kommer spela på UKM (Ung Kultur Möts) som är en musiktävling. med 2 låtar.<br> 
+					Sen ska vi köra på ett bröllop både akustiskt och elektriskt.<br>
+					Och några veckor senare kör vi på Kulturnatten.<br>
+					UKM: 2015-03-22 (2 låtar) | Kulturnatten: 2015-05-22 (30min)
+					</p>	
+				</div>				
+						
+				<div id="footer">
+					<table>
+					<tr>
+						<td>
+							<a href="https://www.facebook.com/jaernslag">
+							<img class="facebook" src="facebook.png"></a>
+						</td>
+						
+						<td><a href="https://www.youtube.com/user/vr0sen">
+							<img class="youtube" src="youtube.png"></img></a></td>
+						
+						<td><a href="https://soundcloud.com/viktor-rosvall">
+							<img class="soundcloud" src="soundcloud.png"></img></a></td>
+						
+					</tr>
+					</table>					
+				</div>								
+			</div>
+			
+			<div id="end">
+				<div id="flags">			
+					<img class="flag flagsv" src="svflag1.jpg"></img>
+					<img class="flag flagen" src="enflag1.jpg"></img>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

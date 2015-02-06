@@ -1,0 +1,213 @@
+<!-- 
+Hemsidan är gjord i Notepad++ av Viktor Rosvall 2015-02-16 som både ett skolprojekt och som en bandhemsida.
+!-->
+<!DOCTYPE html>
+<html>
+	<head lang="se">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>Jaernslag</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery.cookie.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+	
+		$(".logo").on({
+			"mouseover" : function() 
+		{
+			this.src = 'logored.png';
+		},
+			"mouseout" : function() 
+		{
+			this.src='logo.png';
+		}
+		});
+		
+		
+		/*$(".flagsv").on({
+			"mouseover" : function() 
+		{
+			this.src = 'svflag2.png';
+		},
+			"mouseout" : function() 
+		{
+			this.src='svflag1.jpg';
+		}
+		});
+		
+		*/
+		$(".viktortext").show();
+		
+		$(".flagsv").click(function(){
+			$.cookie("sprak", "sv", {expires: 8});
+			location.reload();
+		});
+		
+		$(".flagen").click(function(){
+			$.cookie("sprak", "en", {expires: 8});
+			location.reload();
+		});
+		
+		if ($.cookie('sprak') == 'sv')
+		{
+			$("#bandinfosv").show();
+			$("#bandinfoen").hide();
+		} 
+		else 
+		{
+			$("#bandinfosv").hide();
+			$("#bandinfoen").show();
+		}
+		
+		
+		//if (jQuery.cookie("sprakCookie")){
+		//	$("#content").hide();
+		//}
+		
+		
+	
+		$(".membimg").click(function(){
+			$(".text").hide();
+			var member = $(this).data("member");
+			$("." + member + "text").show("2");
+			
+			$(".membimg").removeClass("imgselected");
+			$(this).addClass("imgselected");
+			
+			$(".membimg").each( function() {
+				 $(this).attr("src",$(this).data("orgimg"));
+			});
+			
+			$(this).data("orgimg",$(this).attr("src"));
+			$(this).attr("src", member+"selected.jpg");
+						
+		});
+		
+		$(".membimg").mouseover(function(){
+			var member = $(this).data("member");
+			$(this).data("orgimg",$(this).attr("src"));
+			$(this).attr("src", member+"selected.jpg");
+		});
+		
+		$(".membimg").mouseout(function(){
+			if ( $(this).hasClass("imgselected")==false ){				
+				$(this).attr("src",$(this).data("orgimg"));
+			}
+		});	
+	});
+	</script>	
+	</head>
+	
+	<body>
+		<div id="background">
+			<div id="wrapperband">
+			
+			
+			
+				<div id="menu">
+				
+					<a href="home.html">
+						<img class="logo" src="logo.png"></img>
+					</a>
+					<ul>
+						<li><a class="ovald menulink" href="contact.html">Contact</a></li>
+						<li><a class="ovald menulink" href="media.html">Media</a></li>
+						<li><a class="vald menulink" href="band.html">Band</a></li>
+						<li><a class="ovald menulink" href="home.html">Home</a></li>
+					</ul>
+				</div>
+				
+				
+				<div id="content">
+					<div id="bilder">
+						<img src="viktorimg.jpg" class="membimg imgselected" data-member="viktor">
+						<img src="willeimg.jpg" class="membimg" data-member="wille">
+						<img src="erikimg.jpg" class="membimg" data-member="erik">
+						<img src="krilleimg.jpg" class="membimg" data-member="krille">
+					</div>
+				</div>	
+			
+				<div id="bandinfoen">
+					<p class="text viktortext"><b>Viktor Rosvall</b><br>
+					Swedish bloke, guitarist and bass player with inspirations from American and British rock and metal.<br>
+					Favorite bands like Metallica, Avenged Sevenfold, Slipknot, Sum-41 and Muse.<br>
+					In his spare time he plays games and practices guitar. Have experience playing on stage.
+					</p>
+					
+					<p class="text willetext"><b>William "Norsken" Johansson</b><br>
+					Half Norwegian, self-taught troubadour with influences of Swedish artists such as Håkan Hellström, Magnus Uggla<br>
+					and American bands such as Sum-41, Greenday, The Offspring and Blink-128.<br>
+					Other than music he live by his biceps.
+					</p>
+					
+					<p class="text eriktext"><b>Erik Helmersson</b><br>
+					Half American bass player. Likes almost all music genres.<br>
+					In his spare time, he is at home sleeping and playing games.<br>
+					Sometimes he picks up the base and pull some sick bass lines and gladly accept donations of Doritos.
+					</p>
+					
+					<p class="text krilletext"><b>Kristoffer "Barka" Engström</b><br>
+					Self-taught drummer and like all music genres.<br>
+					In his spare time he works out at the gym and plays computer.<br>
+					He has a big mohawk which is awesome. 
+					</p>
+				</div>
+				
+				<div id="bandinfosv">
+					<p class="text viktortext"><b>Viktor Rosvall</b><br>
+					Svensk snubbe, guitarist and basist. Inspirationer från Amerikanska och Britiska rock och metall band.<br>
+					Favoritbanden är Metallica, Avenged Sevenfold, Slipknot, Sum-41 and Muse.<br>
+					På sin fritid spelar han och över gitarr. Har mycket erfarenhet av att spela på scen.
+					</p>
+					
+					<p class="text willetext"><b>William "Norsken" Johansson</b><br>
+					Halvnorsk självlärd trubadur med influencer av Svenska artister som Håkan Hellström, Magnus Uggla,<br>
+					Och Amerikanska band som Sum-41, Greenday och The Offspring.<br>
+					Förutom musik så lever han för sin bicep.
+					</p>
+					
+					<p class="text eriktext"><b>Erik Helmersson</b><br>
+					Halv amerikansk basist. Gillar nästan alla typer av musik.<br>
+					På sin fritid sover han eller spelar spel.<br>
+					Ibland tar han basen och spelar några sjuka basriff och tar gladligen emot donationer i Doritos.
+					</p>
+					
+					<p class="text krilletext"><b>Kristoffer "Barka" Engström</b><br>
+					Sjlälvlärd trummis och gillar alla typer av musik.<br>
+					På sin fritid tränar han på gym och spelar dator.<br>
+					Han har en stor mohawk vilket är allt som behövs.
+					</p>
+				</div>
+				
+				<div id="footer">
+					<table>
+					<tr>
+						<td>
+							<a href="https://www.facebook.com/jaernslag">
+							<img class="facebook" src="facebook.png"></a>
+						</td>
+						
+						<td><a href="https://www.youtube.com/user/vr0sen">
+							<img class="youtube" src="youtube.png"></img></a></td>
+						
+						<td><a href="https://soundcloud.com/viktor-rosvall">
+							<img class="soundcloud" src="soundcloud.png"></img></a></td>
+						
+					</tr>
+					</table>					
+				</div>	
+			
+			</div>			
+				
+				
+				
+			<div id="end">
+				<div id="flags">			
+					<img class="flag flagsv" src="svflag1.jpg"></img>
+					<img class="flag flagen" src="enflag1.jpg"></img>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -19,7 +19,6 @@ h1  {
 h2  {
 	font-size:1.3em;
 	font-family: sans-serif;
-	margin:16px 0;
 }
 a {
 	text-decoration: none;
@@ -78,7 +77,7 @@ a {
 .divider {
 	height: 1px;
 	background-color: #8B8B8B;
-	margin: 0 0px;
+	margin:16px 0;
 }
 
 .socialIcons {
@@ -88,7 +87,16 @@ a {
 	text-align: center;
 }
 
-@media screen and (max-width: 710px) {
+.membimg {
+	width: 23.5%;
+	margin: 3px;
+}
+.bandwrapper {
+	display: inline-block;
+	text-align: center;
+}
+
+@media screen and (max-width: 730px) {
 	.loggo  {
 		display: block;
 	}
@@ -99,6 +107,10 @@ a {
 	.menu a {
 		margin-left: 20px;
 	}
+	.membimg {
+		width: 48.5%;
+	}
+}
 }
 
 @media screen and (max-width: 349px) {

@@ -6,9 +6,13 @@ Hemsidan är gjord i Notepad++ av Familjen Rosvall med start 2015-02-16 som star
 	<head lang="se">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Contact</title>
+	<title>Media</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="flexslider2.css" type="text/css" media="screen" />
+	
 	<!--
 	<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
 	-->
@@ -32,6 +36,17 @@ Hemsidan är gjord i Notepad++ av Familjen Rosvall med start 2015-02-16 som star
 	<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
 	<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	
+	<script src="flexslider.js"></script>
+	
+	<script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+      });
+    });
+	</script>
+  
 	</head>
 	
 	<body>
@@ -43,26 +58,34 @@ Hemsidan är gjord i Notepad++ av Familjen Rosvall med start 2015-02-16 som star
 				<div class="menu">
 					<a href="index.html">Home</a>
 					<a href="band.html">Band</a>
-					<a href="media.html">Media</a>
-					<a href="contact.html" class="redtext">Contact</a>
+					<a href="media.html" class="redtext">Media</a>
+					<a href="contact.html">Contact</a>
 				</div>
+			</div>	
+			
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="img/mediaPage/bandet.jpg" />
+					</li>
+					<li>
+						<img src="img/mediaPage/bandet2.jpg" />
+					</li>
+					<li>
+						<img src="img/mediaPage/erik.jpg" />
+					</li>
+					<li>
+						<img src="img/mediaPage/krille.jpg" />
+					</li>
+					<li>
+						<img src="img/mediaPage/viktor.jpg" />
+					</li>
+					<li>
+						<img src="img/mediaPage/wille.jpg" />
+					</li>
+				</ul>
 			</div>
 			
-			<div class="content">
-				<h1>Kontakt Info</h1>
-				
-				<div class="divider"></div>
-				
-				<p>Viktor Rosvall<br>
-				Telefån: 46+ 072-051 88 16<br>
-				E-Mail: jaernslag@gmail.com</p>
-				
-				<p>Vi är ett rock/punk cover band i Ånge, Västernorrland, Sverige.
-				Vi över ~4 gånger i veckan i vår hyrda lokal i Kulturbanken 2.0
-				Lokalen är en Bilda lokal som är gratis att spela i om man är medlem hos dom.</p>
-				<p>Vi letar just nu efter ett gig!</p>
-			</div>
-
 			<div class="content">			
 				<div class="socialWrapper">
 					<a href="https://www.facebook.com/jaernslag">
@@ -81,7 +104,7 @@ Hemsidan är gjord i Notepad++ av Familjen Rosvall med start 2015-02-16 som star
 					<img class="socialIcons" src="img/instagram.png" alt="Instagram bild"/>
 					</a>
 				</div>
-			</div>				
+			</div>
 		</div>
 	</body>
 </html>

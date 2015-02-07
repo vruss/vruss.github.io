@@ -21,11 +21,11 @@ h2  {
 	font-family: sans-serif;
 	margin:16px 0;
 }
-
 a {
 	text-decoration: none;
 	color: white;
 }
+
 #wrapper {
 	min-width: 300px;
 	max-width: 800px;
@@ -38,9 +38,10 @@ a {
 	margin-left: 0;
 	margin-top:5px;
 	display: inline-block;
-	text-align: inline-block;
 }
-
+.logowrapper {
+	display: inline;
+}
 .menu {
 	float:right;
 	display: inline-block;
@@ -59,8 +60,6 @@ a {
 .menu a:hover {
 	color: red;
 }
-
-
 .redtext {
 	color:red;
 }
@@ -75,6 +74,7 @@ a {
      display:block;
 	 max-width: 100%;
 }
+
 .divider {
 	height: 1px;
 	background-color: #8B8B8B;
@@ -101,8 +101,11 @@ a {
 	}
 }
 
-@media screen and (max-width: 333px) {
+@media screen and (max-width: 349px) {
 	.menu a {
-		margin-left: 15px;
+		margin-left: 9px;
+	}
+	.loggo img {
+		width: 280px;
 	}
 }

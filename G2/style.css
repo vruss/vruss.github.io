@@ -9,8 +9,7 @@ body {
 	background-size: cover;
 	background-position: top;
 	background-repeat: repeat;
-	margin-left: -10px;
-	margin-right: -10px;
+	background-color: black;
 }
 h1  {
 	font-size:2em;
@@ -58,18 +57,7 @@ a {
 .menu a:hover {
 	color: red;
 }
-@media screen and (max-width: 710px) {
-	.loggo  {
-		display: block;
-	}
-	.menu {
-		float:none;
-		margin: 0px;
-	}
-	.menu a {
-		margin-left: 20px;
-	}
-}
+
 
 .redtext {
 	color:red;
@@ -92,10 +80,27 @@ a {
 }
 
 .socialIcons {
-	width:18.5%;
-	display: inline-block;
+	width:18%;
 }
 .socialWrapper {
-	width: 105.5%;
-	margin-bottom: -2px;
+	text-align: center;
+}
+
+@media screen and (max-width: 710px) {
+	.loggo  {
+		display: block;
+	}
+	.menu {
+		float:none;
+		margin: 0px;
+	}
+	.menu a {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 333px) {
+	.menu a {
+		margin-left: 15px;
+	}
 }

@@ -107,10 +107,12 @@ a {
 	.menu a {
 		margin-left: 20px;
 	}
-	.membimg {
-		width: 48.5%;
-	}
 }
+
+@media screen and (max-width: 660px) {
+	.membimg {
+		width: 40%;
+	}
 }
 
 @media screen and (max-width: 349px) {
@@ -119,5 +121,8 @@ a {
 	}
 	.loggo img {
 		width: 280px;
+	}
+	.membimg {
+		width: 47%;
 	}
 }

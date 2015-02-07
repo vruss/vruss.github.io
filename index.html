@@ -12,6 +12,10 @@ Hemsidan är gjord i Notepad++ av Familjen Rosvall med start 2015-02-16 som star
 	<!--
 	<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
 	-->
+	
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="flexslider2.css" type="text/css" media="screen" />
+	
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
@@ -32,6 +36,16 @@ Hemsidan är gjord i Notepad++ av Familjen Rosvall med start 2015-02-16 som star
 	<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
 	<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	
+	<script src="flexslider.js"></script>
+	
+	<script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+      });
+    });
+	</script>
 	</head>
 	
 	<body>
@@ -48,9 +62,28 @@ Hemsidan är gjord i Notepad++ av Familjen Rosvall med start 2015-02-16 som star
 				</div>
 			</div>	
 			
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="img/frontPage/vilar.jpg" />
+					</li>
+					<li>
+						<img src="img/frontPage/bicep.jpg" />
+					</li>
+					<li>
+						<img src="img/frontPage/kollar2.jpg" />
+					</li>
+					<li>
+						<img src="img/frontPage/svartvit.jpg" />
+					</li>
+				</ul>
+			</div>
+			
+			<!--
 			<div class="content">
 				<img class="largeImg" src="img/gruppfoto_kallaren.jpg" alt="Grupp foto" />
 			</div>
+			-->
 			
 			<div class="content">
 				<h1>NYHETER</h1>

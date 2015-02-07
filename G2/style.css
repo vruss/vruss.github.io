@@ -6,7 +6,6 @@ body {
 	margin: 0px;
 	
 	background-image: url("img/gear.jpg");
-	background-size: cover;
 	background-position: top;
 	background-repeat: repeat;
 	background-color: black;
@@ -76,7 +75,7 @@ a {
 .divider {
 	height: 1px;
 	background-color: #8B8B8B;
-	margin: 0 5px;
+	margin: 0 0px;
 }
 
 .socialIcons {

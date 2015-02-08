@@ -28,9 +28,8 @@ a {
 #wrapper {
 	min-width: 300px;
 	max-width: 800px;
-	margin: auto;
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .loggo  {
@@ -68,6 +67,7 @@ a {
 	width: auto;
 	padding: 10px;
 	margin-bottom: 25px;
+	margin-top:5px;
 }
 .largeImg {
      display:block;
@@ -97,21 +97,117 @@ a {
 }
 
 @media screen and (max-width: 730px) {
-	.loggo  {
-		display: block;
-	}
 	.menu {
-		float:none;
-		margin: 6px;
+		margin-top: 30px;
 	}
 	.menu a {
 		margin-left: 20px;
 	}
+	.loggo img {
+		width: 290px;
+	}
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 655px) {
+	.menu {
+		margin-top: 25px;
+	}
+	.menu a {
+		margin-left: 10px;
+	}
+	.loggo img {
+		width: 250px;
+	}
 	.membimg {
 		width: 40%;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.loggo  {
+		display: block;
+	}
+	.menu {
+		margin: 4px;
+		float:none
+	}
+}
+
+/* Motorola Droid 3 */
+@media screen and (max-width: 540px) {
+	.menu a {
+		margin-left: 57px;
+	}
+	.loggo {
+		margin-left:55px;
+	}
+	.loggo img {
+		width: 410px;
+	}
+}
+
+/* Sony Xperisa Sola, U */
+@media screen and (max-width: 480px) {
+	.menu a {
+		margin-left: 39px;
+	}
+	.loggo {
+		margin-left:30px;
+	}
+	.loggo img {
+		width: 390px;
+	}
+}
+
+/* LG Optimus LTE */
+@media screen and (max-width: 424px) {
+	.menu a {
+		margin-left: 29px;
+	}
+	.loggo {
+		margin-left:30px;
+	}
+	.loggo img {
+		width: 330px;
+	}
+}
+
+/* Apple iPhone 6 Plus */
+@media screen and (max-width: 414px) {
+	.menu a {
+		margin-left: 29px;
+	}
+	.loggo {
+		margin-left:30px;
+	}
+	.loggo img {
+		width: 330px;
+	}
+}
+
+/* Apple iPhone 6 */
+@media screen and (max-width: 384px) {
+	.menu a {
+		margin-left: 23px;
+	}
+	.loggo {
+		margin-left:24px;
+	}
+	.loggo img {
+		width: 310px;
+	}
+}
+
+/* Apple iPhone 6 */
+@media screen and (max-width: 375px) {
+	.menu a {
+		margin-left: 22px;
+	}
+	.loggo {
+		margin-left:23px;
+	}
+	.loggo img {
+		width: 310px;
 	}
 }
 
@@ -119,17 +215,36 @@ a {
 	.menu a {
 		margin-left: 9px;
 	}
-	.menu {
-	}
 	.loggo img {
 		width: 280px;
 	}
 	.membimg {
 		width: 47%;
+	}
 }
 
-@media screen and (max-width: 319px) {
+/* HTC One X, EVO LTE */
+@media screen and (max-width: 360px) {
 	.menu a {
-	margin-left: 7px;
+		margin-left: 20px;
+	}
+	.loggo {
+		margin-left:21px;
+	}
+	.loggo img {
+		width: 300px;
+	}
+}
+
+/* Older Phones */
+@media screen and (max-width: 330px) {
+	.menu a {
+		margin-left: 12px;
+	}
+	.loggo {
+		margin-left:15px;
+	}
+	.loggo img {
+		width: 280px;
 	}
 }

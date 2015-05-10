@@ -118,7 +118,12 @@ a {
 
 .logoKlass {
 	max-width: 470px;
-	
+}
+.credits {
+	float: right;
+	margin-top: -10px;
+	font-size: 13px;
+	font-family: initial;
 }
 
 @media screen and (max-width: 730px) {

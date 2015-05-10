@@ -116,6 +116,11 @@ a {
 	text-align: center;
 }
 
+.logoKlass {
+	max-width: 470px;
+	
+}
+
 @media screen and (max-width: 730px) {
 	.menu {
 		margin-top: 30px;

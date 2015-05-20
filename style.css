@@ -63,7 +63,7 @@ li {
 	background-color: rgba(255, 255, 255, 0.75);
 }
 .year a {
-	padding: 2px 4px;
+	padding: 5px 10px;
 	font-size: 1.25em;
 	color: #000000;
 } 
@@ -75,6 +75,7 @@ li {
 	padding: 4px 7px;
 	font-family: arial;
 	font-size: 0.9em;
+	text-transform:lowercase;
 }
 .month a:hover{
 	color: white;

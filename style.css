@@ -24,6 +24,69 @@ a {
 	text-decoration: none;
 	color: white;
 }
+ul {
+    display: table;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+}
+li {
+	display: table;
+}
+
+.zoner {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+	margin-top:5px;
+	padding: 10px;
+}
+.zoner a {
+	font-family: sans-serif;
+	margin:0px;
+	color: #CA0403;
+	float: left;
+	margin-left: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.list {
+	background-color: rgba(150, 150, 150, 0.75);
+	margin-top: 32px;
+	display: block;
+}
+.year {
+	margin: 0px 0 3px;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+.year a {
+	width: 131px;
+	padding: 2px 4px;
+	font-size: 1.25em;
+	color: #000000;
+} 
+.month {
+	
+}
+.month a {
+	color: #C7C7C7;
+	padding: 2px 4px;
+}
+.left {
+	width: 17.4%;
+	float: left;
+}
+.right {
+	width: 73%;
+	float: right;
+}
+.spelningar {
+	color: #CA0403;
+	font-size: 1.3em;
+}
+
 
 #wrapper {
 	min-width: 300px;
@@ -73,6 +136,11 @@ a {
 	margin-bottom: 25px;
 	margin-top:5px;
 }
+.footer {
+	display: inline-block;
+}
+
+
 
 .divider {
 	height: 1px;

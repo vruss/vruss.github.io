@@ -63,7 +63,7 @@ li {
 	background-color: rgba(255, 255, 255, 0.75);
 }
 .year a {
-	padding: 5px 10px;
+	padding: 2px 4px;
 	font-size: 1.25em;
 	color: #000000;
 } 
@@ -72,7 +72,7 @@ li {
 }
 .month a {
 	color: #C7C7C7;
-	padding: 4px 7px;
+	padding: 5px 10px;
 	font-family: arial;
 	font-size: 0.9em;
 	text-transform:lowercase;

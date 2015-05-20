@@ -14,7 +14,7 @@ h1  {
 	font-size:2em;
 	font-family: sans-serif;
 	margin:0px;
-	color: #CA0403;
+	color: #F05209;
 }
 h2  {
 	font-size:1.3em;
@@ -59,31 +59,41 @@ li {
 }
 .year {
 	margin: 0px 0 3px;
+	width: 100%;
 	background-color: rgba(255, 255, 255, 0.75);
 }
 .year a {
-	width: 131px;
 	padding: 2px 4px;
 	font-size: 1.25em;
 	color: #000000;
 } 
-.month {
-	
+.year a:hover{
+	color: #646464;;
 }
 .month a {
 	color: #C7C7C7;
-	padding: 2px 4px;
+	padding: 4px 7px;
+	font-family: arial;
+	font-size: 0.9em;
+}
+.month a:hover{
+	color: white;
 }
 .left {
 	width: 17.4%;
 	float: left;
 }
 .right {
-	width: 73%;
+	width: 75%;
 	float: right;
 }
 .spelningar {
-	color: #CA0403;
+	font-family: sans-serif;
+	margin:0px;
+	color: #F05209;
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
 	font-size: 1.3em;
 }
 
@@ -119,10 +129,10 @@ li {
 	margin-left: 30px;
 }
 .menu a:hover {
-	color: red;
+	color: #F05209;
 }
 .redtext {
-	color:red;
+	color:#F05209;
 }
 
 .center {
@@ -140,12 +150,29 @@ li {
 	display: inline-block;
 }
 
-
+.repeater {
+	margin-top: 10px;
+	font-size:1.25em;
+	background-color: rgba(0, 0, 0, 0);	
+}
+.repeater p {
+	display:inline;
+}
+.gammla p {
+	color: #8B8B8B;
+}
+.monthShort {
+	color:#2F6A91;
+}
 
 .divider {
 	height: 1px;
 	background-color: #8B8B8B;
 	margin:16px 0;
+}
+.zoneDivider {
+	margin:4px 0;
+	float: none;
 }
 
 .socialIcons {

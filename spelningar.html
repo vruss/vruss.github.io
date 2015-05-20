@@ -5,13 +5,12 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 -->
 
 <html>
-	<head lang="se">
+	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Band</title>
+	<title>Contact</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
@@ -42,58 +41,86 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 				</div>
 				<div class="menu">
 					<a href="index.html">Start</a>
-					<a href="band.html" class="redtext">Band</a>
-					<a href="spelningar.html">Spelningar</a>
+					<a href="band.html">Band</a>
+					<a href="spelningar.html" class="redtext">Spelningar</a>
 					<a href="media.html">Media</a>
 					<a href="contact.html">Kontakt</a>
 				</div>
-			</div>	
-			
-			<div class="content">
-				<div class="bandwrapper">
-					<img src="img/viktor.jpg" class="membimg" alt="bild" />
-					<img src="img/wille.jpg" class="membimg" alt="bild" />
-					<img src="img/erik.jpg" class="membimg" alt="bild" />
-					<img src="img/krille.jpg" class="membimg" alt="bild" />
-				</div>
 			</div>
 			
-			<div class="content">
-				<h1>Medlemmar</h1>
-				<h2>Viktor Rosvall</h2>
-				<p>Gitarrist och basist. Inspiration från 
-				amerikanska och brittiska rock- och metalband.
-				Favoritbanden är Metallica, Avenged Sevenfold, Slipknot, 
-				Sum-41, Green Day, Bring me the Horizon and Muse.</p>
-				<p>På sin fritid spelar han spel och över gitarr. 
-				Har mycket erfarenhet av att spela på scen.</p>
+			<!-- Vänster sida -->
+			<div class="left zoner">
+			
+				<span class="spelningar">Datum</span>
 				
-				<div class="divider"></div>
+				<ul class="list">
+					<ul class="year">
+						<li>
+							<a href="#">2015</a>
+						</li>
+					</ul>
+					
+					<ul class="month">
+						<li>
+							<a href="#">Februari (1)</a>
+						</li>
+						<li>
+							<a href="#">April (2)</a>
+						</li>
+						<li>
+							<a href="#">Maj (2)</a>
+						</li>
+					</ul>
+				</ul>
 				
-				<p><h2>William Johansson</h2>
-				Självlärd trubadur och gitarrist med influenser av 
-				svenska artister som Håkan Hellström, Magnus Uggla
-				och amerikanska band som Sum-41, Greenday, Blink-182 och The Offspring.</p>
-				<p>Förutom musik så lever han för sina biceps.</p>
+			</div>
+			
+			<!-- Höger sida -->
+			<div class="right zoner">
+				<span class="spelningar zoneDivider">Spelningar</span>		
 				
-				<div class="divider"></div>
+				<!-- Spelningar med datum, månad, titel, plats -->
+				<div class="repeater gammla">
+					<p>28</p>
+					<span class="monthShort">FEB</span>
+					<p>Kill! Kill! Pussycat! Releasefest :: Mittlandia, Ånge</p>
+				</div>
 				
-				<p><h2>Erik Helmersson</h2>
-				Basist med massor av riffs. Gillar nästan alla typer av musik.
-				Erik lyckas alltid undvika kameror oavsett om han vill eller inte.</p>
-				<p>På sin fritid sover han eller spelar spel.
-				Ibland tar han basen och spelar några sjuka basriff och tar gladligen emot donationer i Doritos.</p>
+				<div class="divider "></div>
 				
-				<div class="divider"></div>
+				<div class="repeater gammla">
+					<p>19</p>
+					<span class="monthShort">APR</span>
+					<p>Ung Kultur Möts (UKM) :: Mittlandia, Ånge</p>
+				</div>
 				
-				<p><h2>Kristoffer Engström</h2>
-				Självlärd trummis och gillar alla typer av musik.</p>
-				<p>På sin fritid tränar han på gym och spelar spel.
-				Han har en stor mohawk vilket är allt som behövs.</p>
+				<div class="divider "></div>
+				
+				<div class="repeater gammla">
+					<p>25</p>
+					<span class="monthShort">APR</span>
+					<p>Förband åt Sooner or Later :: Steamclub, Ånge</p>
+				</div>
+				
+				<div class="divider "></div>
+				
+				<div class="repeater gammla">
+					<p>09</p>
+					<span class="monthShort">MAJ</span>
+					<p>Ung Kultur Möts länsfestival (UKM) :: Folkets hus, Söråker</p>
+				</div>	
+				
+				<div class="divider "></div>
+				
+				<div class="repeater">
+					<p>22</p>
+					<span class="monthShort">MAJ</span>
+					<p>Kulturnatten :: Utescenen, Ånge</p>
+				</div>					
 			</div>
 
 			<!-- Social Icons -->
-			<div class="content">			
+			<div class="content footer">			
 				<div class="socialWrapper">
 					<a href="http://instagram.com/jaernslag/"> 
 					<img class="socialIcons" src="img/instagram.png" alt="Instagram bild"/>
@@ -106,9 +133,9 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 					</a>
 					<a href="https://www.youtube.com/channel/UCueKPgnr53b8gR3wpB5J6nQ">
 					<img class="socialIcons" src="img/youtube.png" alt="Youtube bild"/>
-					</a>
+					</a>		
 				</div>
-			</div>
+			</div>				
 		</div>
 	</body>
 </html>

@@ -236,6 +236,10 @@ li {
 	height:100%;
 }
 
+.small {
+	font-size: 1px;
+}
+
 /* For mobile devices */
 @media screen and (max-width: 773px) {
 	.menu {

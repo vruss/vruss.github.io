@@ -5,12 +5,16 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 -->
 
 <html>
-	<head>
+	<head lang="se">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Spelningar</title>
+	<title>Bilder</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="flexslider2.css" type="text/css" media="screen" />
+	
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
@@ -31,6 +35,17 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 	<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
 	<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	
+	<script src="flexslider.js"></script>
+	
+	<script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+      });
+    });
+	</script>
+  
 	</head>
 	
 	<body>
@@ -42,110 +57,27 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 				<div class="menu">
 					<a href="index.html">Start</a>
 					<a href="band.html">Band</a>
-					<a href="spelningar.html" class="redtext">Spelningar</a>
+					<a href="spelningar.html">Spelningar</a>
 					<a href="media.html">Media</a>
 					<a href="contact.html">Kontakt</a>
 				</div>
+			</div>	
+			
+			<div class="content center">
+				<img src="img/hemvandaren/DSC03183.jpg" class="spelningarImg" alt="logo">
+				<img src="img/hemvandaren/DSC03186.jpg" class="spelningarImg" alt="logo">
+				<img src="img/hemvandaren/DSC03187.jpg" class="spelningarImg" alt="logo">
+				<img src="img/hemvandaren/DSC03188.jpg" class="spelningarImg" alt="logo">
+				<img src="img/hemvandaren/DSC03189.jpg" class="spelningarImg" alt="logo">
+				<img src="img/hemvandaren/DSC03192.jpg" class="spelningarImg" alt="logo">
+				<img src="img/hemvandaren/DSC03193.jpg" class="spelningarImg" alt="logo">
+				<img src="img/hemvandaren/DSC03194.jpg" class="spelningarImg" alt="logo">
+				
+				<br><span class="fotoCredits">Foto: Ulf Stecksen</span>
 			</div>
 			
-			<!-- Vänster sida -->
-			<div class="left zoner">
-			
-				<span class="spelningar">Datum</span>
-				
-				<ul class="list">
-					<ul class="year">
-						<li>
-							<a href="#">2015</a>
-						</li>
-					</ul>
-					
-					<ul class="month">
-						<li>
-							<a href="#">Februari (1)</a>
-						</li>
-						<li>
-							<a href="#">April (2)</a>
-						</li>
-						<li>
-							<a href="#">Maj (2)</a>
-						</li>
-						<li>
-							<a href="#">Juni (1)</a>
-						</li>
-						<li>
-							<a href="#">Juli (1)</a>
-						</li>
-					</ul>
-				</ul>
-				
-			</div>
-			
-			<!-- Höger sida -->
-			<div class="right zoner">
-				<span class="spelningar zoneDivider">Spelningar</span>		
-				
-				<!-- Spelningar med datum, månad, titel, plats -->
-				<div class="repeater gammla">
-					<p>28</p>
-					<span class="monthShort">FEB</span>
-					<p>Kill! Kill! Pussycat! Releasefest :: Mittlandia, Ånge</p>
-				</div>
-				
-				<div class="divider "></div>
-				
-				<div class="repeater gammla">
-					<p>19</p>
-					<span class="monthShort">APR</span>
-					<p>Ung Kultur Möts (UKM) :: Mittlandia, Ånge</p>
-				</div>
-				
-				<div class="divider "></div>
-				
-				<div class="repeater gammla">
-					<p>25</p>
-					<span class="monthShort">APR</span>
-					<p>Förband åt Sooner or Later :: Steamclub, Ånge</p>
-				</div>
-				
-				<div class="divider "></div>
-				
-				<div class="repeater gammla">
-					<p>09</p>
-					<span class="monthShort">MAJ</span>
-					<p>Ung Kultur Möts länsfestival (UKM) :: Folkets hus, Söråker</p>
-				</div>	
-				
-				<div class="divider "></div>
-				
-				<div class="repeater gammla">
-					<p>22</p>
-					<span class="monthShort">MAJ</span>
-					<p>Kulturnatten :: Utescenen, Ånge ::</p>
-					<a href="kulturnatten.html">Bilder</a>
-				</div>	
-
-				<div class="divider "></div>
-				
-				<div class="repeater gammla">
-					<p>27</p>
-					<span class="monthShort">JUN</span>
-					<p>Hemvänderdagen :: Stora scenen, Ånge ::</p>
-					<a href="hemvanderaren2015.html">Bilder</a>
-				</div>		
-				
-				<div class="divider "></div>
-				
-				<div class="repeater gammla">
-					<p>18</p>
-					<span class="monthShort">JUL</span>
-					<p>Pridefestivalen :: KB Scenen, Ånge</p>
-					<!--<a href="kulturnatten2015.html">Bilder</a>-->
-				</div>					
-			</div>
-
 			<!-- Social Icons -->
-			<div class="content footer">			
+			<div class="content">			
 				<div class="socialWrapper">
 					<a href="http://instagram.com/jaernslag/"> 
 					<img class="socialIcons" src="img/instagram.png" alt="Instagram bild"/>
@@ -158,9 +90,9 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 					</a>
 					<a href="https://www.youtube.com/channel/UCueKPgnr53b8gR3wpB5J6nQ">
 					<img class="socialIcons" src="img/youtube.png" alt="Youtube bild"/>
-					</a>		
+					</a>
 				</div>
-			</div>				
+			</div>
 		</div>
 	</body>
 </html>

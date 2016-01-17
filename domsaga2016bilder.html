@@ -5,12 +5,16 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 -->
 
 <html>
-	<head>
+	<head lang="se">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Kontact</title>
+	<title>Bilder</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="flexslider2.css" type="text/css" media="screen" />
+	
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
@@ -31,6 +35,17 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 	<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
 	<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	
+	<script src="flexslider.js"></script>
+	
+	<script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+      });
+    });
+	</script>
+  
 	</head>
 	
 	<body>
@@ -44,26 +59,19 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 					<a href="band.html">Band</a>
 					<a href="spelningar2016.html">Spelningar</a>
 					<a href="media.html">Media</a>
-					<a href="contact.html" class="redtext">Kontakt</a>
+					<a href="contact.html">Kontakt</a>
 				</div>
+			</div>	
+			
+			<div class="content center">
+				<img src="img/domsaga/domsaga1.jpg" class="spelningarImg wideImg" alt="logo">
+				<img src="img/domsaga/domsaga2.jpg" class="spelningarImg wideImg" alt="logo">
+				<img src="img/domsaga/domsaga3.jpg" class="spelningarImg wideImg" alt="logo">
+				<img src="img/domsaga/domsaga4.jpg" class="spelningarImg wideImg" alt="logo">
+				
+				<br><span class="fotoCredits">Foto: Pelle Nilsson ljungandalen.info i Samarbete med Ånge kommun</span>
 			</div>
 			
-			<div class="content">
-				<h1>Kontakt Info</h1>
-				
-				<div class="divider"></div>
-				
-				<p>Viktor Rosvall<br>
-				Mobil: 46+ 070 590 65 19<br>
-				<br>William Johansson<br>
-				Mobil: 46+ 070 661 36 81<br>
-				<br>Email: jaernslag@gmail.com</p>
-				
-				<p>Vi är ett punkrock band i Ånge, Västernorrland, Sverige.
-				Vi övar i Kulturbanken 2.0,
-				lokalen är en Bilda lokal som är gratis att spela i som medlem i Bilda.</p>
-			</div>
-
 			<!-- Social Icons -->
 			<div class="content">			
 				<div class="socialWrapper">
@@ -78,9 +86,9 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 					</a>
 					<a href="https://www.youtube.com/channel/UCueKPgnr53b8gR3wpB5J6nQ">
 					<img class="socialIcons" src="img/youtube.png" alt="Youtube bild"/>
-					</a>		
+					</a>
 				</div>
-			</div>				
+			</div>
 		</div>
 	</body>
 </html>

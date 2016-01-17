@@ -203,8 +203,13 @@ li {
 }
 
 .membimg {
-	width: 23.5%;
 	margin: 3px;
+}
+.membimgHigh {
+	width: 47%;
+}
+.membimgWide {
+	width: 95%;
 }
 .bandwrapper {
 	display: inline-block;

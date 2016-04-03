@@ -5,12 +5,16 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 -->
 
 <html>
-	<head>
+	<head lang="se">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Spelningar</title>
+	<title>Jaernslag</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="flexslider2.css" type="text/css" media="screen" />
+	
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
@@ -32,6 +36,8 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 	<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	
+	<script src="flexslider.js"></script>
+	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,7 +47,15 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 	  ga('create', 'UA-72540172-1', 'auto');
 	  ga('send', 'pageview');
 
-	</script>	
+	</script>
+	
+	<script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+      });
+    });
+	</script>
 	</head>
 	
 	<body>
@@ -51,80 +65,77 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 					<img src="img/jaernslagLogoSmallNorskt.png" alt="Jaernslag"/>
 				</div>
 				<div class="menu">
-					<a href="index.html">Start</a>
+					<a href="index.html">START</a>
 					<a href="band.html">Band</a>
-					<a href="spelningar2016.html" class="redtext">Spelningar</a>
+					<a href="spelningar2016.html">Spelningar</a>
 					<a href="media.html">Media</a>
 					<a href="contact.html">Kontakt</a>
 				</div>
-			</div>
+			</div>	
 			
-			<!-- Vänster sida -->
-			<div class="left zoner">
-			
-				<span class="spelningar">Datum</span>
-				
-				<ul class="list">
-					<ul class="year">
-						<li>
-							<a href="spelningar2016.html">2016</a>
-						</li>
-					</ul>
-					
-					<ul class="month">
-						<li>
-							<a href="#">januari (1)</a>
-						</li>
-						<li>
-							<a href="#">mars (1)</a>
-						</li>
-						<li>
-							<a href="#">april (1)</a>
-						</li>
-					</ul>
-					
-					<ul class="year">
-						<li>
-							<a href="spelningar2015.html">2015</a>
-						</li>
-					</ul>
+			<!-- Slider -->
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="img/frontPage/DSC_0037.jpg" alt="bild" />
+					</li>
+					<li>
+						<img src="img/frontPage/12633663_820688331374479_5156376483774185321_o.jpg" alt="bild" />
+					</li>
 				</ul>
-				
 			</div>
 			
-			<!-- Höger sida -->
-			<div class="right zoner">
-				<span class="spelningar zoneDivider">Spelningar</span>		
+			
+			<div class="content">
+				<h1>NYHETER</h1>
 				
-				<!-- Spelningar med datum, månad, titel, plats -->
-				<div class="repeater gammla">
-					<p>16</p>
-					<span class="monthShort">JAN</span>
-					<p>Livekarusellen 2016 :: Domsaga, Sundsvall ::</p>
-					<a href="domsaga2016bilder.html">Bilder</a>
-				</div>		
+				<h2>Kulturnatten</h2>
+				<p>Jaernslag kör igång kl 20:30 på utescenen med 5 låtar 
+				varav en är det premiär på!</p>
 				
-				<div class="divider "></div>
+				<div class="divider"></div>
 				
-				<div class="repeater gammla">
-					<p>23</p>
-					<span class="monthShort">MAR</span>
-					<p>UKM 2016 :: Hotell Mittlandia, Ånge</p>
-					<a href="ukm2016bilder.html">Bilder</a>
+				<h2>UKM Länsfestival</h2>
+				<p>Jaernslag har nu spelat sitt live på länsfestival i Söråker med låten Berzerk!
+				Det har varit två fantastiska kvällar som vi alla har älskat. 
+				Vi har mött underbara människor vi aldrig kommer att glömma.</p>
+				
+				<div class="divider"></div>
+				
+				<h2>Steamclub</h2>
+				<p>Jaernslag kommer vara förband för Sooner or Later på Steamclub 25 april strax för 22:00!
+				Vi kör då runt 9 låtar varav 2 av låtarna blir Copycat och Berzerk!</p>	
+				
+				<div class="divider"></div>
+				
+				<h2>UKM</h2>
+				<p>Jaernslag har nu spelat sitt live på UKM med 2 egna låtar: Copycat och Berzerk!
+				Vi gick vidare till nästa deltävling som är länsfinalen i Söråker.</p>
+				<div class="video-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/vNwD2sO-7WY" frameborder="0" ></iframe>
 				</div>
 				
-				<div class="divider "></div>
+				<div class="divider"></div>
 				
-				<div class="repeater gammla">
-					<p>2</p>
-					<span class="monthShort">APR</span>
-					<p>Livekarusellen 2016 Turnéstopp :: Café Inbetween, Timrå</p>
-				</div>
+				<h2>Kill! Kill! Pussycat! Förband</h2>
+				<p>Jaernslag kommer vara förband för Kill! Kill! Pussycat på deras releasefest med 6 låtar.
+				Vår trummis är på semester så vi tar in Robert, våran reserv-trummis.</p>
+				<p>Det här blir vår första live men vi är alla taggade!</p>
 				
+				<div class="divider"></div>
+				
+				<h2>UKM och Kulturnatten</h2>
+				<p>Jaernslag kommer spela på UKM (Ung Kultur Möts) med 2 låtar.
+				Sen ska vi köra på ett bröllop både akustiskt och elektriskt.
+				Och några veckor senare kör vi på Kulturnatten.</p>
+				
+				<div class="divider hidden"></div>
+				
+				<a href="index.html" class="nextPage">Tillbaka</a>
 			</div>
 
 			<!-- Social Icons -->
-			<div class="content footer">			
+			<div class="content">			
 				<div class="socialWrapper">
 					<a href="http://instagram.com/jaernslag/"> 
 					<img class="socialIcons" src="img/instagram.png" alt="Instagram bild"/>
@@ -137,9 +148,9 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 					</a>
 					<a href="https://www.youtube.com/channel/UCueKPgnr53b8gR3wpB5J6nQ">
 					<img class="socialIcons" src="img/youtube.png" alt="Youtube bild"/>
-					</a>		
+					</a>
 				</div>
-			</div>				
+			</div>
 		</div>
 	</body>
 </html>

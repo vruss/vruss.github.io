@@ -241,6 +241,16 @@ li {
 	height:100%;
 }
 
+.hidden {
+	visibility:hidden;
+}
+
+.nextPage {
+	color: rgb(240, 82, 9);
+    float: right;
+    margin-top: -21px;
+}
+
 .small {
 	font-size: 1px;
 }

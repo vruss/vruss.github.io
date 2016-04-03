@@ -5,12 +5,16 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 -->
 
 <html>
-	<head>
+	<head lang="se">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Spelningar</title>
+	<title>Bilder</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="flexslider2.css" type="text/css" media="screen" />
+	
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
@@ -32,6 +36,8 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 	<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	
+	<script src="flexslider.js"></script>
+	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,7 +47,16 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 	  ga('create', 'UA-72540172-1', 'auto');
 	  ga('send', 'pageview');
 
-	</script>	
+	</script>
+	
+	<script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+      });
+    });
+	</script>
+  
 	</head>
 	
 	<body>
@@ -53,78 +68,22 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 				<div class="menu">
 					<a href="index.html">Start</a>
 					<a href="band.html">Band</a>
-					<a href="spelningar2016.html" class="redtext">Spelningar</a>
+					<a href="spelningar2016.html">Spelningar</a>
 					<a href="media.html">Media</a>
 					<a href="contact.html">Kontakt</a>
 				</div>
-			</div>
+			</div>	
 			
-			<!-- Vänster sida -->
-			<div class="left zoner">
-			
-				<span class="spelningar">Datum</span>
-				
-				<ul class="list">
-					<ul class="year">
-						<li>
-							<a href="spelningar2016.html">2016</a>
-						</li>
-					</ul>
-					
-					<ul class="month">
-						<li>
-							<a href="#">januari (1)</a>
-						</li>
-						<li>
-							<a href="#">mars (1)</a>
-						</li>
-						<li>
-							<a href="#">april (1)</a>
-						</li>
-					</ul>
-					
-					<ul class="year">
-						<li>
-							<a href="spelningar2015.html">2015</a>
-						</li>
-					</ul>
-				</ul>
-				
-			</div>
-			
-			<!-- Höger sida -->
-			<div class="right zoner">
-				<span class="spelningar zoneDivider">Spelningar</span>		
-				
-				<!-- Spelningar med datum, månad, titel, plats -->
-				<div class="repeater gammla">
-					<p>16</p>
-					<span class="monthShort">JAN</span>
-					<p>Livekarusellen 2016 :: Domsaga, Sundsvall ::</p>
-					<a href="domsaga2016bilder.html">Bilder</a>
-				</div>		
-				
-				<div class="divider "></div>
-				
-				<div class="repeater gammla">
-					<p>23</p>
-					<span class="monthShort">MAR</span>
-					<p>UKM 2016 :: Hotell Mittlandia, Ånge</p>
-					<a href="ukm2016bilder.html">Bilder</a>
-				</div>
-				
-				<div class="divider "></div>
-				
-				<div class="repeater gammla">
-					<p>2</p>
-					<span class="monthShort">APR</span>
-					<p>Livekarusellen 2016 Turnéstopp :: Café Inbetween, Timrå</p>
-				</div>
-				
-			</div>
+			<div class="content center">
 
+				<img src="img/ukm2016/12052663_482453338613808_1905058295116368373_o.jpg" class="spelningarImg wideImg" alt="logo">
+				<img src="img/ukm2016/12473936_482453345280474_1980424238690514184_o.jpg" class="spelningarImg wideImg" alt="logo">
+				
+				<br><span class="fotoCredits">Foto: Elian Wallin</span>
+			</div>
+			
 			<!-- Social Icons -->
-			<div class="content footer">			
+			<div class="content">			
 				<div class="socialWrapper">
 					<a href="http://instagram.com/jaernslag/"> 
 					<img class="socialIcons" src="img/instagram.png" alt="Instagram bild"/>
@@ -137,9 +96,9 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 					</a>
 					<a href="https://www.youtube.com/channel/UCueKPgnr53b8gR3wpB5J6nQ">
 					<img class="socialIcons" src="img/youtube.png" alt="Youtube bild"/>
-					</a>		
+					</a>
 				</div>
-			</div>				
+			</div>
 		</div>
 	</body>
 </html>

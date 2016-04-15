@@ -195,8 +195,13 @@ li {
 	float: none;
 }
 
+/* 4 social Icons
 .socialIcons {
 	width:23.5%;
+} 
+*/
+.socialIcons {
+	width:18.5%;
 }
 .socialWrapper {
 	text-align: center;

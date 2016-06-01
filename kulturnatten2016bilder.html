@@ -8,10 +8,13 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 	<head lang="se">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Band</title>
+	<title>Bilder</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+	
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="flexslider2.css" type="text/css" media="screen" />
+	
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
@@ -33,6 +36,8 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 	<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	
+	<script src="flexslider.js"></script>
+	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -43,6 +48,15 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 	  ga('send', 'pageview');
 
 	</script>
+	
+	<script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+      });
+    });
+	</script>
+  
 	</head>
 	
 	<body>
@@ -53,56 +67,30 @@ Hemsidan är gjord i Notepad++ av Viktor Rosval med hjälp av Henrik Rosvall sta
 				</div>
 				<div class="menu">
 					<a href="index.html">Start</a>
-					<a href="band.html" class="redtext">Band</a>
+					<a href="band.html">Band</a>
 					<a href="spelningar2016.html">Spelningar</a>
 					<a href="media.html">Media</a>
 					<a href="contact.html">Kontakt</a>
 				</div>
 			</div>	
 			
-			<div class="content">
-				<div class="bandwrapper">
-					<img src="img/domsaga/DSC_0001.jpg" class="membimg membimgWide" alt="bild" />
-					<img src="img/kulturnatten2016/robert1.jpg" class="spelningarImg" alt="logo">
-					<img src="img/ukmSundsvall2016/DSC_0411 PS.jpg" class="membimg membimgHigh" alt="logo">
-					<img src="img/ukmSundsvall2016/DSC_0380 PS.jpg" class="spelningarImg wideImg" alt="logo">
-					
-				</div>
+			<div class="content center">
+			
+				
+				<img src="img/kulturnatten2016/robert1.jpg" class="spelningarImg" alt="logo">
+				<img src="img/kulturnatten2016/wille1.jpg" class="spelningarImg" alt="logo">
+				<img src="img/kulturnatten2016/wille2.jpg" class="spelningarImg" alt="logo">
+				<img src="img/kulturnatten2016/viktor1.jpg" class="spelningarImg" alt="logo">
+				<img src="img/kulturnatten2016/erik1.jpg" class="spelningarImg" alt="logo">
+				<img src="img/kulturnatten2016/viktor3.jpg" class="spelningarImg" alt="logo">
+				
+				
+				<img src="img/kulturnatten2016/viktor2.jpg" class="spelningarImg wideImg" alt="logo">
+				<img src="img/kulturnatten2016/erik2.jpg" class="spelningarImg wideImg" alt="logo">
+				
+				<br><span class="fotoCredits">Foto: Pelle Nilsson ljungandalen.info</span>
 			</div>
 			
-			<div class="content">
-				<h1>Medlemmar</h1>
-				<h2>Viktor Rosvall</h2>
-				<p>Gitarrist och basist. Inspiration från 
-				amerikanska och brittiska rock- och metalband.
-				Favoritbanden är Slipknot, Rammstein, System of a Down, Sum-41, Bring me the Horizon and Muse.</p>
-				
-				<div class="divider"></div>
-				
-				<p><h2>William Johansson</h2>
-				Självlärd trubadur och gitarrist med influenser av 
-				svenska artister som Håkan Hellström, Magnus Uggla
-				och amerikanska band som Sum-41, Greenday, Blink-182 och The Offspring.</p>
-				<p>Förutom musik så lever han för sina biceps.</p>
-				
-				<div class="divider"></div>
-				
-				<p><h2>Erik Helmersson</h2>
-				Basist med massor av riffs. Gillar nästan alla typer av musik.
-				Erik lyckas alltid undvika kameror oavsett om han vill eller inte.</p>
-				<p>På sin fritid sover han eller spelar spel.
-				Ibland tar han basen och spelar några sjuka basriff och tar gladligen 
-				emot donationer i Doritos.</p>
-				
-				<div class="divider"></div>
-				
-				<p><h2>Robert Nyqvist</h2>
-				Självlärd trummis och DJ på sidan av, 
-				när han inte tränar med bandet eller dj:ar så sitter han oftast vid 
-				datorn och kollar heta pics på jaernslag.</p>
-				<p>Favoritband är Slipknot, A Day To Remember och Red</p>
-			</div>
-
 			<!-- Social Icons -->
 			<div class="content">			
 				<div class="socialWrapper">

@@ -110,6 +110,9 @@ li {
 	font-family: serif;
 }
 
+.gömd{
+	visibility: hidden;
+}
 
 #wrapper {
 	min-width: 300px;
